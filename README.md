@@ -1,8 +1,4 @@
-# Public Repo Secret Hunter (React + TypeScript, Vite)
-
-## Overview
-
-Searcher
+# Searcher
 
 ## Features
 
