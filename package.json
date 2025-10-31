@@ -1,5 +1,6 @@
 {
-  "name": "public-repo-secret-hunter",
+  "homepage": "https://kati-neville.github.io/searcher/",
+  "name": "searcher",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="p-6 max-w-5xl mx-auto h-screen flex flex-col">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Public Repo Secret Hunter</h1>
+        <h1 className="text-2xl font-bold">Searcher</h1>
       </div>
 
       <SearchBar onSearch={setRepos} defaultQuery={'rainforest-builder/tech-test-scannable-repo'} />

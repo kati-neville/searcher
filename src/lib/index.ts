@@ -2,7 +2,7 @@ import { ScanResult } from '../types'
 import { PAT_TOKEN } from './constants'
 
 export function buildIssueBody(results: ScanResult[]) {
-  const lines: string[] = ['Potential secrets detected by *Public Repo Secret Hunter*', '\n']
+  const lines: string[] = ['Potential secrets detected by *Searcher*', '\n']
   for (const r of results) {
     lines.push(`- **${r.path}**`)
     for (const m of r.matches) {
