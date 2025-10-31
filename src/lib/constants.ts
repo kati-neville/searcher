@@ -1,1 +1,1 @@
-export const PAT_TOKEN = "gh_token";
+export const PAT_TOKEN = 'gh_token'

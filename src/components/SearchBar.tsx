@@ -2,7 +2,13 @@ import React, { useState } from 'react'
 import { searchRepos } from '../lib/github'
 import { RepoResult } from '../types'
 
-export default function SearchBar({ onSearch, defaultQuery }: { onSearch: (r: RepoResult[]) => void; defaultQuery?: string }) {
+export default function SearchBar({
+  onSearch,
+  defaultQuery,
+}: {
+  onSearch: (r: RepoResult[]) => void
+  defaultQuery?: string
+}) {
   const [q, setQ] = useState(defaultQuery || '')
   const [loading, setLoading] = useState(false)
 
@@ -22,7 +28,12 @@ export default function SearchBar({ onSearch, defaultQuery }: { onSearch: (r: Re
 
   return (
     <form onSubmit={handleSearch} className="flex gap-2">
-      <input value={q} onChange={(e) => setQ(e.target.value)} className="border rounded p-2 flex-1" placeholder="search repos, e.g. stripe examples" />
+      <input
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        className="border rounded p-2 flex-1"
+        placeholder="search repos, e.g. stripe examples"
+      />
       <button className="px-3 py-1 bg-blue-600 text-white rounded" type="submit" disabled={loading}>
         {loading ? 'Searching...' : 'Search'}
       </button>
